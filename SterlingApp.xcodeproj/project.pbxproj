@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E71390CF22FCD6BD00D6A32C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71390CE22FCD6BD00D6A32C /* AppDelegate.swift */; };
+		E71390D122FCD6BD00D6A32C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71390D022FCD6BD00D6A32C /* ViewController.swift */; };
+		E71390D422FCD6BD00D6A32C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71390D222FCD6BD00D6A32C /* Main.storyboard */; };
+		E71390D622FCD6BF00D6A32C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71390D522FCD6BF00D6A32C /* Assets.xcassets */; };
+		E71390D922FCD6BF00D6A32C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71390D722FCD6BF00D6A32C /* LaunchScreen.storyboard */; };
+		E71390E422FCD6BF00D6A32C /* SterlingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71390E322FCD6BF00D6A32C /* SterlingAppTests.swift */; };
+		E71390EF22FCD6BF00D6A32C /* SterlingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71390EE22FCD6BF00D6A32C /* SterlingAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E71390E022FCD6BF00D6A32C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E71390C322FCD6BD00D6A32C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E71390CA22FCD6BD00D6A32C;
+			remoteInfo = SterlingApp;
+		};
+		E71390EB22FCD6BF00D6A32C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E71390C322FCD6BD00D6A32C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E71390CA22FCD6BD00D6A32C;
+			remoteInfo = SterlingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E71390CB22FCD6BD00D6A32C /* SterlingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SterlingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E71390CE22FCD6BD00D6A32C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E71390D022FCD6BD00D6A32C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E71390D322FCD6BD00D6A32C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E71390D522FCD6BF00D6A32C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E71390D822FCD6BF00D6A32C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E71390DA22FCD6BF00D6A32C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E71390DF22FCD6BF00D6A32C /* SterlingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SterlingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E71390E322FCD6BF00D6A32C /* SterlingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SterlingAppTests.swift; sourceTree = "<group>"; };
+		E71390E522FCD6BF00D6A32C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E71390EA22FCD6BF00D6A32C /* SterlingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SterlingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E71390EE22FCD6BF00D6A32C /* SterlingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SterlingAppUITests.swift; sourceTree = "<group>"; };
+		E71390F022FCD6BF00D6A32C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E71390C822FCD6BD00D6A32C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71390DC22FCD6BF00D6A32C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71390E722FCD6BF00D6A32C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E71390C222FCD6BD00D6A32C = {
+			isa = PBXGroup;
+			children = (
+				E71390CD22FCD6BD00D6A32C /* SterlingApp */,
+				E71390E222FCD6BF00D6A32C /* SterlingAppTests */,
+				E71390ED22FCD6BF00D6A32C /* SterlingAppUITests */,
+				E71390CC22FCD6BD00D6A32C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E71390CC22FCD6BD00D6A32C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E71390CB22FCD6BD00D6A32C /* SterlingApp.app */,
+				E71390DF22FCD6BF00D6A32C /* SterlingAppTests.xctest */,
+				E71390EA22FCD6BF00D6A32C /* SterlingAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E71390CD22FCD6BD00D6A32C /* SterlingApp */ = {
+			isa = PBXGroup;
+			children = (
+				E71390CE22FCD6BD00D6A32C /* AppDelegate.swift */,
+				E71390D022FCD6BD00D6A32C /* ViewController.swift */,
+				E71390D222FCD6BD00D6A32C /* Main.storyboard */,
+				E71390D522FCD6BF00D6A32C /* Assets.xcassets */,
+				E71390D722FCD6BF00D6A32C /* LaunchScreen.storyboard */,
+				E71390DA22FCD6BF00D6A32C /* Info.plist */,
+			);
+			path = SterlingApp;
+			sourceTree = "<group>";
+		};
+		E71390E222FCD6BF00D6A32C /* SterlingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E71390E322FCD6BF00D6A32C /* SterlingAppTests.swift */,
+				E71390E522FCD6BF00D6A32C /* Info.plist */,
+			);
+			path = SterlingAppTests;
+			sourceTree = "<group>";
+		};
+		E71390ED22FCD6BF00D6A32C /* SterlingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E71390EE22FCD6BF00D6A32C /* SterlingAppUITests.swift */,
+				E71390F022FCD6BF00D6A32C /* Info.plist */,
+			);
+			path = SterlingAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E71390CA22FCD6BD00D6A32C /* SterlingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E71390F322FCD6BF00D6A32C /* Build configuration list for PBXNativeTarget "SterlingApp" */;
+			buildPhases = (
+				E71390C722FCD6BD00D6A32C /* Sources */,
+				E71390C822FCD6BD00D6A32C /* Frameworks */,
+				E71390C922FCD6BD00D6A32C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SterlingApp;
+			productName = SterlingApp;
+			productReference = E71390CB22FCD6BD00D6A32C /* SterlingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E71390DE22FCD6BF00D6A32C /* SterlingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E71390F622FCD6BF00D6A32C /* Build configuration list for PBXNativeTarget "SterlingAppTests" */;
+			buildPhases = (
+				E71390DB22FCD6BF00D6A32C /* Sources */,
+				E71390DC22FCD6BF00D6A32C /* Frameworks */,
+				E71390DD22FCD6BF00D6A32C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E71390E122FCD6BF00D6A32C /* PBXTargetDependency */,
+			);
+			name = SterlingAppTests;
+			productName = SterlingAppTests;
+			productReference = E71390DF22FCD6BF00D6A32C /* SterlingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E71390E922FCD6BF00D6A32C /* SterlingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E71390F922FCD6BF00D6A32C /* Build configuration list for PBXNativeTarget "SterlingAppUITests" */;
+			buildPhases = (
+				E71390E622FCD6BF00D6A32C /* Sources */,
+				E71390E722FCD6BF00D6A32C /* Frameworks */,
+				E71390E822FCD6BF00D6A32C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E71390EC22FCD6BF00D6A32C /* PBXTargetDependency */,
+			);
+			name = SterlingAppUITests;
+			productName = SterlingAppUITests;
+			productReference = E71390EA22FCD6BF00D6A32C /* SterlingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E71390C322FCD6BD00D6A32C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Adie Olalekan";
+				TargetAttributes = {
+					E71390CA22FCD6BD00D6A32C = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					E71390DE22FCD6BF00D6A32C = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = E71390CA22FCD6BD00D6A32C;
+					};
+					E71390E922FCD6BF00D6A32C = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = E71390CA22FCD6BD00D6A32C;
+					};
+				};
+			};
+			buildConfigurationList = E71390C622FCD6BD00D6A32C /* Build configuration list for PBXProject "SterlingApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E71390C222FCD6BD00D6A32C;
+			productRefGroup = E71390CC22FCD6BD00D6A32C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E71390CA22FCD6BD00D6A32C /* SterlingApp */,
+				E71390DE22FCD6BF00D6A32C /* SterlingAppTests */,
+				E71390E922FCD6BF00D6A32C /* SterlingAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E71390C922FCD6BD00D6A32C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E71390D922FCD6BF00D6A32C /* LaunchScreen.storyboard in Resources */,
+				E71390D622FCD6BF00D6A32C /* Assets.xcassets in Resources */,
+				E71390D422FCD6BD00D6A32C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71390DD22FCD6BF00D6A32C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71390E822FCD6BF00D6A32C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E71390C722FCD6BD00D6A32C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E71390D122FCD6BD00D6A32C /* ViewController.swift in Sources */,
+				E71390CF22FCD6BD00D6A32C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71390DB22FCD6BF00D6A32C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E71390E422FCD6BF00D6A32C /* SterlingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71390E622FCD6BF00D6A32C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E71390EF22FCD6BF00D6A32C /* SterlingAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E71390E122FCD6BF00D6A32C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E71390CA22FCD6BD00D6A32C /* SterlingApp */;
+			targetProxy = E71390E022FCD6BF00D6A32C /* PBXContainerItemProxy */;
+		};
+		E71390EC22FCD6BF00D6A32C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E71390CA22FCD6BD00D6A32C /* SterlingApp */;
+			targetProxy = E71390EB22FCD6BF00D6A32C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E71390D222FCD6BD00D6A32C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E71390D322FCD6BD00D6A32C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E71390D722FCD6BF00D6A32C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E71390D822FCD6BF00D6A32C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E71390F122FCD6BF00D6A32C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E71390F222FCD6BF00D6A32C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E71390F422FCD6BF00D6A32C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N6VULMTHBS;
+				INFOPLIST_FILE = SterlingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.olami.SterlingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E71390F522FCD6BF00D6A32C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N6VULMTHBS;
+				INFOPLIST_FILE = SterlingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.olami.SterlingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E71390F722FCD6BF00D6A32C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N6VULMTHBS;
+				INFOPLIST_FILE = SterlingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.olami.SterlingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SterlingApp.app/SterlingApp";
+			};
+			name = Debug;
+		};
+		E71390F822FCD6BF00D6A32C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N6VULMTHBS;
+				INFOPLIST_FILE = SterlingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.olami.SterlingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SterlingApp.app/SterlingApp";
+			};
+			name = Release;
+		};
+		E71390FA22FCD6BF00D6A32C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N6VULMTHBS;
+				INFOPLIST_FILE = SterlingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.olami.SterlingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SterlingApp;
+			};
+			name = Debug;
+		};
+		E71390FB22FCD6BF00D6A32C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N6VULMTHBS;
+				INFOPLIST_FILE = SterlingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.olami.SterlingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SterlingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E71390C622FCD6BD00D6A32C /* Build configuration list for PBXProject "SterlingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E71390F122FCD6BF00D6A32C /* Debug */,
+				E71390F222FCD6BF00D6A32C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E71390F322FCD6BF00D6A32C /* Build configuration list for PBXNativeTarget "SterlingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E71390F422FCD6BF00D6A32C /* Debug */,
+				E71390F522FCD6BF00D6A32C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E71390F622FCD6BF00D6A32C /* Build configuration list for PBXNativeTarget "SterlingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E71390F722FCD6BF00D6A32C /* Debug */,
+				E71390F822FCD6BF00D6A32C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E71390F922FCD6BF00D6A32C /* Build configuration list for PBXNativeTarget "SterlingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E71390FA22FCD6BF00D6A32C /* Debug */,
+				E71390FB22FCD6BF00D6A32C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E71390C322FCD6BD00D6A32C /* Project object */;
+}
