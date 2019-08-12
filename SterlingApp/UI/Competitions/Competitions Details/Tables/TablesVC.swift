@@ -23,26 +23,28 @@ class TablesVC: UIViewController {
     let cellId = "TablesCell"
     var tableData: [TableModel] = [TableModel]()
     var id: Int?
+    var presenter: TablesContract.Presenter!
+    var progressView: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         layout()
         logic()
-        guard let id = id else {return}
-        NetworkAdapter.instance.getCompetitionStandings(id: id).subscribe(onNext: { response in
-            
-            let standing = response.standings?.compactMap { $0 }
-            standing?.forEach({ (model) in
-                
-                guard let data = model.table else {return}
-                log("DATA FUCK \(data)", .fuck)
-                self.tableData.append(contentsOf: data)
-                self.tableView.reloadData()
-            })
-//                .compactMap {$0.table}.reduce([], +)
-            
-        })
-        
+        presenter = TablesPresenter(view: self, source: NetworkAdapter.instance)
+        presenter.get(id: id)
+    }
+}
+
+extension TablesVC: TablesContract.View {
+    func showData(data: [TableModel]) {
+        DispatchQueue.main.async {
+            self.tableData.append(contentsOf: data)
+            self.tableView.reloadData()
+        }
+    }
+    
+    func showProgress(visible: Bool) {
+        visible ? progressView.startAnimating() : progressView.stopAnimating()
     }
 }
 
@@ -50,6 +52,8 @@ extension TablesVC {
     private func layout() {
         view.addSubview(tableView)
         tableView.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0, enableInsets: false)
+        progressView = UIActivityIndicatorView(style: .gray)
+        tableView.layout(progressView).center()
     }
     
     private func logic() {

@@ -25,7 +25,6 @@ class CompetitionsVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
-        //        tableView.separatorStyle = .none
         return tableView
     }()
     
@@ -37,19 +36,9 @@ class CompetitionsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         view.backgroundColor = .white
         layout()
         logic()
-//        NetworkAdapter.instance.getCompetitions().subscribe(onNext: { response in
-//            guard let data = response.competitions else {return}
-//
-//            //            log(value)
-//        })
-        
-        //        NetworkAdapter.instance.getTeamsResource(id: 57).subscribe(onNext: { value in
-        ////            log(value)
-        //        })
         presenter = CompetitionsPresenter(view: self, source: NetworkAdapter.instance)
         presenter.start()
     }
@@ -65,7 +54,7 @@ class CompetitionsVC: UIViewController {
 }
 
 extension CompetitionsVC: CompetitionsContract.View {
-    func showCompetitions(data: [CompetitionsData]) {
+    func showData(data: [CompetitionsData]) {
         DispatchQueue.main.async {
             self.competitionsData.append(contentsOf: data)
             self.tableView.reloadData()
@@ -84,7 +73,7 @@ extension CompetitionsVC {
         headerTitle.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 44, enableInsets: false)
         tableView.anchor(top: headerTitle.bottomAnchor, left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0, enableInsets: false)
         
-        progressView = UIActivityIndicatorView(style: .white)
+        progressView = UIActivityIndicatorView(style: .gray)
         tableView.layout(progressView).center()
     }
     
@@ -108,10 +97,8 @@ extension CompetitionsVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        //        guard let id = agentList[indexPath.row].id else {return}
         let controller = CompetitionsDetails()
         controller.navTitle = competitionsData[indexPath.row].name
-        log("TITLEEEE BOOM \(competitionsData[indexPath.row].name)", .json)
         controller.id = competitionsData[indexPath.row].id
         navigationController?.pushViewController(controller, animated: true)
     }

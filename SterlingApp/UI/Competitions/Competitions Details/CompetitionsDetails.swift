@@ -72,7 +72,6 @@ extension CompetitionsDetails: CarbonTabSwipeNavigationDelegate {
         let carbonTabSwipeNavigation = CarbonTabSwipeNavigation(items: items, delegate: self)
         carbonTabSwipeNavigation.insert(intoRootViewController: self, andTargetView: carbonViews)
         let font = UIFont(name: "Avenir", size: 18)
-        //        carbonTabSwipeNavigation.toolbarHeight.constant = 45
         carbonTabSwipeNavigation.setSelectedColor(.white, font: font!)
         carbonTabSwipeNavigation.setNormalColor(UIColor.black.withAlphaComponent(0.6), font: font!)
         carbonTabSwipeNavigation.setIndicatorColor(.gray)
@@ -82,7 +81,7 @@ extension CompetitionsDetails: CarbonTabSwipeNavigationDelegate {
         carbonTabSwipeNavigation.carbonSegmentedControl?.setWidth(width, forSegmentAt: 2)
         carbonTabSwipeNavigation.toolbar.isTranslucent = false
         carbonTabSwipeNavigation.toolbar.clipsToBounds = true
-//        carbonTabSwipeNavigation.carbonSegmentedControl?.backgroundColor = UIColor(hexString: "#2E755E")
+        carbonTabSwipeNavigation.carbonSegmentedControl?.backgroundColor = UIColor.blue.withAlphaComponent(0.5)
     }
     
 }
@@ -99,11 +98,7 @@ extension CompetitionsDetails {
             navView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
             navView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             navView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-            navView.heightAnchor.constraint(equalToConstant: 52),
-            //            carbonViews.topAnchor.constraint(equalTo: navView.bottomAnchor, constant: 0),
-            //            carbonViews.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0),
-            //            carbonViews.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            //            carbonViews.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
+            navView.heightAnchor.constraint(equalToConstant: 52)
             ])
         
         carbonViews.anchor(top: navView.bottomAnchor, left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0, enableInsets: false)

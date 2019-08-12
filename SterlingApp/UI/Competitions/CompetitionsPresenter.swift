@@ -22,16 +22,16 @@ class CompetitionsPresenter: CompetitionsContract.Presenter {
     }
     
     func start() {
-        getCompetitions()
+        get()
     }
     
-    func getCompetitions() {
+    func get() {
         view?.showProgress(visible: true)
         source.getCompetitions()
             .subscribe(onNext: {[weak self] response in
             self?.view?.showProgress(visible: false)
             guard let data = response.competitions else {return}
-            self?.view?.showCompetitions(data: data)
+            self?.view?.showData(data: data)
                 }, onError: { _ in
                     self.view?.showProgress(visible: false)
             }).disposed(by: disposeBag)

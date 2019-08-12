@@ -27,7 +27,7 @@ class TodayFixturesPresenter: TodayFixturesContract.Presenter {
     
     func getTodaysFixture() {
         view?.showProgress(visible: true)
-        source.getCompetitions()
+        source.getMatches()
             .subscribe(onNext: {[weak self] response in
                 self?.view?.showProgress(visible: false)
                 guard let data = response.matches else {return}

@@ -1,8 +1,8 @@
 //
 //  BaseVP.swift
-//  Fast
+//  SterlingApp
 //
-//  Created by Olar's Mac on 8/4/19.
+//  Created by Olar's Mac on 8/10/19.
 //  Copyright © 2019 Adie Olalekan. All rights reserved.
 //
 

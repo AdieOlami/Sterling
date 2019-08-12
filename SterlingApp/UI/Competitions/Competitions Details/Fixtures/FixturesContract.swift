@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+struct FixturesContract {
+    typealias View = _FixturesView
+    typealias Presenter = _FixturesPresenter
+}
+
+protocol _FixturesView: BaseView {
+    func showData(data: [MatchesModel])
+    func showProgress(visible: Bool)
+}
+
+protocol _FixturesPresenter: BasePresenter {
+    func get(id: Int?)
+}

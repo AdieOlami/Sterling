@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+struct TablesContract {
+    typealias View = _TablesView
+    typealias Presenter = _TablesPresenter
+}
+
+protocol _TablesView: BaseView {
+    func showData(data: [TableModel])
+    func showProgress(visible: Bool)
+}
+
+protocol _TablesPresenter: BasePresenter {
+    func get(id: Int?)
+}

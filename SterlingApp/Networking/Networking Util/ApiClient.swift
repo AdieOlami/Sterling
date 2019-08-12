@@ -1,6 +1,6 @@
 //
 //  ApiClient.swift
-//  SterlingNetworking
+//  SterlingApp
 //
 //  Created by Olar's Mac on 8/8/19.
 //  Copyright © 2019 Adie Olalekan. All rights reserved.

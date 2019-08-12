@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+struct TeamsModel: Codable {
+    var id: Int?
+    var area: AreaModel?
+    var name: String?
+    var shortName: String?
+    var crestUrl: String?
+    var squad: [SquadModel]?
+}
+
+struct SquadModel: Codable {
+    var id: Int?
+    var name: String?
+    var position: String?
+}

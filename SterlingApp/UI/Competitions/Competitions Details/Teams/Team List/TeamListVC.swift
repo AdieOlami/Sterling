@@ -44,23 +44,44 @@ class TeamListVC: UIViewController {
     var squadData: [SquadModel] = [SquadModel]()
     var id: Int?
     var navTitle: String?
+    var presenter: TeamListContract.Presenter!
+    var progressView: UIActivityIndicatorView!
     let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.clear.withAlphaComponent(0.3)
         layout()
         logic()
-        guard let id = id else {return}
-        NetworkAdapter.instance.getTeamsResource(id: id).subscribe(onNext: { response in
-            
-            guard let data = response.squad else {return}
-            guard let img = response.crestUrl else {return}
+        presenter = TeamListPresenter(view: self, source: NetworkAdapter.instance)
+        presenter.get(id: id)
+//        guard let id = id else {return}
+//        NetworkAdapter.instance.getTeamsResource(id: id).subscribe(onNext: { response in
+//
+//            guard let data = response.squad else {return}
+//            guard let img = response.crestUrl else {return}
+//            let url = URL(string: img)
+//            self.clubCrest.kf.setImage(with: url)
+//            self.squadData.append(contentsOf: data)
+//            self.tableView.reloadData()
+//
+//        })
+    }
+}
+
+extension TeamListVC: TeamListContract.View {
+    func showData(data: TeamsModel) {
+        DispatchQueue.main.async {
+            guard let squad = data.squad else {return}
+            guard let img = data.crestUrl else {return}
             let url = URL(string: img)
             self.clubCrest.kf.setImage(with: url)
-            self.squadData.append(contentsOf: data)
+            self.squadData.append(contentsOf: squad)
             self.tableView.reloadData()
-            
-        })
+        }
+    }
+    
+    func showProgress(visible: Bool) {
+        visible ? progressView.startAnimating() : progressView.stopAnimating()
     }
 }
 
@@ -85,6 +106,9 @@ extension TeamListVC {
             navView.heightAnchor.constraint(equalToConstant: 52),
             clubCrest.centerXAnchor.constraint(equalTo: bgView.centerXAnchor)
             ])
+        
+        progressView = UIActivityIndicatorView(style: .gray)
+        tableView.layout(progressView).center()
     }
     
     private func logic() {

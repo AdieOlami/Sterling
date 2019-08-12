@@ -14,10 +14,10 @@ struct CompetitionsContract {
 }
 
 protocol _CompetitionsView: BaseView {
-    func showCompetitions(data: [CompetitionsData])
+    func showData(data: [CompetitionsData])
     func showProgress(visible: Bool)
 }
 
 protocol _CompetitionsPresenter: BasePresenter {
-    func getCompetitions()
+    func get()
 }

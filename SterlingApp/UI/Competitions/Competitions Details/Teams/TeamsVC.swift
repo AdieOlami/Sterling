@@ -32,22 +32,28 @@ class TeamsVC: UIViewController {
     var teamData: [TeamsData] = [TeamsData]()
     
     var id: Int?
-    
+    var presenter: TeamsContract.Presenter!
+    var progressView: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         layout()
         logic()
-        guard let id = id else {return}
-        NetworkAdapter.instance.getCompetitionTeams(id: id).subscribe(onNext: { response in
-            
-            guard let data = response.teams else {return}
+        presenter = TeamsPresenter(view: self, source: NetworkAdapter.instance)
+        presenter.get(id: id)
+    }
+}
+
+extension TeamsVC: TeamsContract.View {
+    func showData(data: [TeamsData]) {
+        DispatchQueue.main.async {
             self.teamData.append(contentsOf: data)
             self.collectionView.reloadData()
-            log("DATA FUCK \(data)", .fuck)
-            
-        })
-        
+        }
+    }
+    
+    func showProgress(visible: Bool) {
+        visible ? progressView.startAnimating() : progressView.stopAnimating()
     }
 }
 
@@ -55,6 +61,9 @@ extension TeamsVC {
     private func layout() {
         view.addSubview(collectionView)
         collectionView.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingTop: 4, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0, enableInsets: false)
+        
+        progressView = UIActivityIndicatorView(style: .gray)
+        collectionView.layout(progressView).center()
     }
     
     private func logic() {

@@ -26,7 +26,6 @@ class TeamsCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         setupView()
     }
     

@@ -44,4 +44,3 @@ class TodayFixturesCoordinator: NSObject, Coordinator, UINavigationControllerDel
     }
     
 }
-

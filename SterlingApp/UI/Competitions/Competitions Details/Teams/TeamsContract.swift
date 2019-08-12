@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+struct TeamsContract {
+    typealias View = _TeamsView
+    typealias Presenter = _TeamsPresenter
+}
+
+protocol _TeamsView: BaseView {
+    func showData(data: [TeamsData])
+    func showProgress(visible: Bool)
+}
+
+protocol _TeamsPresenter: BasePresenter {
+    func get(id: Int?)
+}
