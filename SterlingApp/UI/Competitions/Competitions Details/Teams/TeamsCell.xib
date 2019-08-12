@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TeamsCell" customModule="SterlingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="98" height="92"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="98" height="92"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9mV-Jc-ySk">
+                        <rect key="frame" x="4" y="4" width="90" height="84"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c98-y8-sEK">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="7Ys-HL-pbK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liverpool" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqO-rr-geO">
+                                <rect key="frame" x="4" y="52" width="82" height="19.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wqO-rr-geO" firstAttribute="leading" secondItem="9mV-Jc-ySk" secondAttribute="leading" constant="4" id="7D3-tr-kkj"/>
+                            <constraint firstItem="wqO-rr-geO" firstAttribute="top" secondItem="c98-y8-sEK" secondAttribute="bottom" constant="4" id="LHF-j8-X1c"/>
+                            <constraint firstItem="c98-y8-sEK" firstAttribute="leading" secondItem="9mV-Jc-ySk" secondAttribute="leading" id="Snw-YR-Ea6"/>
+                            <constraint firstAttribute="trailing" secondItem="c98-y8-sEK" secondAttribute="trailing" id="c9a-Fd-a9J"/>
+                            <constraint firstAttribute="trailing" secondItem="wqO-rr-geO" secondAttribute="trailing" constant="4" id="hYZ-Mu-hKu"/>
+                            <constraint firstItem="c98-y8-sEK" firstAttribute="top" secondItem="9mV-Jc-ySk" secondAttribute="top" id="vTN-aX-fOd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9mV-Jc-ySk" secondAttribute="bottom" constant="4" id="37j-qh-KyA"/>
+                <constraint firstItem="9mV-Jc-ySk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="3SO-9d-Rlg"/>
+                <constraint firstItem="9mV-Jc-ySk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="bfd-8U-Rnb"/>
+                <constraint firstAttribute="trailing" secondItem="9mV-Jc-ySk" secondAttribute="trailing" constant="4" id="jeZ-Mt-v14"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="98" height="92"/>
+            <connections>
+                <outlet property="bgView" destination="9mV-Jc-ySk" id="Kx0-Oe-5Gf"/>
+                <outlet property="clubImage" destination="c98-y8-sEK" id="zEm-3B-MGr"/>
+                <outlet property="clubName" destination="wqO-rr-geO" id="mZV-XT-bTR"/>
+            </connections>
+            <point key="canvasLocation" x="169.56521739130437" y="103.79464285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>
